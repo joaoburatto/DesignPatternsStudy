@@ -1,10 +1,9 @@
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Coimbra;
 using Coimbra.Services;
 using Cysharp.Threading.Tasks;
 
-namespace LocalStorage
+namespace Command.LocalStorage
 {
     [PreloadService]
     public class LocalStorageSystem : ILocalStorageService

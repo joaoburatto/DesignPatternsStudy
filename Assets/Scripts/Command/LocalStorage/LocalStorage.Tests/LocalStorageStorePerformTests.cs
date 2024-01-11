@@ -1,19 +1,18 @@
 using System.Collections;
-using System.Threading.Tasks;
 using Coimbra.Services;
 using Cysharp.Threading.Tasks;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace LocalStorage.LocalStorage.Tests
+namespace Command.LocalStorage.LocalStorage.Tests
 {
     public class LocalStorageStorePerformTests
     {
         [UnityTest]
         public IEnumerator T001_PlayerPrefsStoreCommand_Perform_OneCommand_CheckValid_TestsSimplePasses()
         {            
-            ILocalStorageService localStorageService = ServiceLocator.Get<ILocalStorageService>();
+            ILocalStorageService localStorageService = ServiceLocator.GetChecked<ILocalStorageService>();
 
             Assert.That(localStorageService, !Is.Null);
 
@@ -46,7 +45,7 @@ namespace LocalStorage.LocalStorage.Tests
         [UnityTest]
         public IEnumerator T002_LocalStorageStoreCommandPerform_TwoCommand_CheckCount_TestsSimplePasses()
         {            
-            ILocalStorageService localStorageService = ServiceLocator.Get<ILocalStorageService>();
+            ILocalStorageService localStorageService = ServiceLocator.GetChecked<ILocalStorageService>();
 
             Assert.That(localStorageService, !Is.Null);
 

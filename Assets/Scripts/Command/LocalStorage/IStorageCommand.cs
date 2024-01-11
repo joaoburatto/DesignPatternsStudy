@@ -1,7 +1,6 @@
-﻿using System;
-using Cysharp.Threading.Tasks;
+﻿using Cysharp.Threading.Tasks;
 
-namespace LocalStorage
+namespace Command.LocalStorage
 {
     public interface IStorageCommand
     {

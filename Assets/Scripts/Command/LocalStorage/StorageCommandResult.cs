@@ -1,4 +1,4 @@
-﻿namespace LocalStorage
+﻿namespace Command.LocalStorage
 {
     public struct StorageCommandResult
     {

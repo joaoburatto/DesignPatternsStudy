@@ -1,7 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace LocalStorage
+namespace Command.LocalStorage
 {
     public class PlayerPrefsStoreCommand : IStorageCommand
     {
